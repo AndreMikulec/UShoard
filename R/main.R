@@ -17,6 +17,7 @@ initEnv <- function(init = NULL, envir = parent.frame()) {
   tryCatchLog::tryCatchLog({
   require(data.table)
   require(xts)
+  require(quantmod)
 
   eval(parse(text="assign(\"env\", environment())"), envir = parent.frame())
 
@@ -30,6 +31,10 @@ initEnv <- function(init = NULL, envir = parent.frame()) {
   assign("MoveFront", DataCombine::MoveFront, envir = envir)
 
   assign("as.Date", zoo::as.Date, envir = envir)
+
+  assign("select",      dplyr::select, envir = envir)
+  assign("mutate",      dplyr::mutate, envir = envir)
+  assign("filter",      dplyr::filter, envir = envir)
 
   ops <- options()
 
