@@ -1,0 +1,25 @@
+Package: UShoard
+Title: Provides US Treasure Bond information (one line, title case)
+Version: 0.0.0.9000
+Authors@R: c(person("Andre", "Mikulec", role = c("aut", "cre"),
+                     email = "Andre_Mikulec@Hotmail.com"))
+Description: Collected detailed coupon and bill statistics.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends:
+    data.table,
+    xts,
+    quantmod
+Imports: 
+    zoo,
+    DataCombine,
+    readxl,
+    magrittr,
+    stringr,
+    tryCatchLog,
+    futile.logger,
+    timeSeries
+Suggests: 
+    testthat
+RoxygenNote: 6.1.0

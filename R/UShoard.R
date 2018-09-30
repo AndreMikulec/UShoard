@@ -1,0 +1,72 @@
+#' UShoard: Data of Sales Volume of US Treasury Bills and Bonds
+#'
+#' @section Source:
+#'
+#' Investor Class Auction Allotments
+#' U.S. DEPARTMENT OF THE TREASURY
+#' https://home.treasury.gov/data/investor-class-auction-allotments
+#'
+#' RECENT DATA
+#' Coupon Auctions - Data from October 2009-present
+#' This table provides investor class allotments for marketable Treasury coupon auctions.
+#' Data are ordered by issue date.
+#' This table was previously published as the PDO-4 table in the quarterly Treasury Bulletin.
+#' Release Dates:  Release Dates:  September 22nd, October 7th, October 22nd
+#'
+#' Bill Auctions - Data from October 2009-present
+#' This table provides investor class allotments for marketable Treasury bill auctions.
+#' Data are ordered by issue date.
+#' Release Dates: October 7th
+#'
+#' HISTORICAL DATA
+#' Coupon Auctions - Data from January 2000-September 2009
+#' This table provides investor class allotments for marketable Treasury coupon auctions.
+#' Data are ordered by issue date.
+#' This table was previously published as the PDO-4 table in the quarterly Treasury Bulletin.
+#'
+#' Bill Auctions - Data from August 2001-September 2009
+#' This table provides investor class allotments for marketable Treasury bill auctions.
+#' Data are ordered by issue date.
+#'
+#' @section Treasures Securities:
+#'
+#' Of the following treasury securities,
+#' included but not limited to
+#'
+#' 4, 13, 26, and 52 Week Bills,
+#' 2-Year FRN,
+#' 2-Year Note,
+#' 5-Year TIPS Note,
+#' 5-Year Note,
+#' 7-Year Note,
+#' 3-Year Note,
+#' 10-Year Note,
+#' and
+#' 30-Year Bond
+#'
+#' @section Provides:
+#'
+#' issue_date,
+#' security -
+#'     term or type condensed to security,
+#' rate -
+#'     coupon rate, or spread, or auction high rate,
+#' cusip,
+#' maturity_date,
+#' total_issue
+#'
+#' Also total_issue is further detailed.
+#'
+#' soma_issue,
+#' institutions_issue,
+#' individuals_issue,
+#' dealers_issue,
+#' pensions_issue,
+#' investment_funds_issue,
+#' foreign_issue,
+#' and
+#' other_issue
+#'
+#' @docType package
+#' @name UShoard
+NULL
